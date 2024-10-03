@@ -14,10 +14,14 @@ color: rgb(100, 20, 200);
 <img src="3dgifmaker00921.gif"/>
   
 <p>My first paragraph.</p>
-  <iframe src="https://olafwempe.com/mp3/silence/silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-<video height="400px" autoplay loop playsinline preload="metadata">
+<video id="testvideo" height="400px" loop>
   <source src="tumblr_rstul0HbAc1y5ejpt.mp4" type="video/mp4"/>
 </video>
+  <script>
+document.getElementById("testvideo").addEventListener("mouseover", function() {
+            this.play();
+    });
+</script>
 <!-- AHHHHHHHH WHY IS THIS NOT WORKING -->
 </body>
 </html>
